@@ -1,0 +1,142 @@
+{
+  "Index": {
+    "nav": {
+      "help": "Yardim",
+      "dictionaries": "Luget",
+      "project": "Layihe",
+      "about": "Layihe Haqqinda",
+      "thanks": "Tesekkurler",
+      "participate": "Layihede Istrak",
+      "mobile": "Mobile Proqram",
+      "contact": "Elaqe"
+    },
+    "home": {
+      "placeholder": "Axtar",
+      "wordlist": "Sözlük",
+      "entries": "Məqalələr",
+      "options": {
+        "begins": "Başlayır", 
+        "contains": "Başlayır Özündə Saxlayır",
+        "ends": "Bitir"
+      }
+    },
+    "help": {
+      "title": "Yardım"
+    },
+    "dict": {
+      "title": "Lüğətlər",
+      "cardTitle": {
+        "one": "Azərbaycan dilinin izahlı lüğəti",
+        "two": "Azərbaycan dilinin omonimlər lüğəti",
+        "three": "Azərbaycan dilinin sinonimlər lüğəti",
+        "four": "Azərbaycan dilinin antonimlər lüğəti",
+        "five": "Azərbaycanca-Rusca lüğət",
+        "six": "Azərbaycanca-Ingiliscə lüğət",
+        "seven": "İngiliscə-Azərbaycanca lüğət",
+        "eight": "WordNet – İngilis dili sözlərinin verilənlər bazası",
+        "nine": "Rusca-Azərbaycanca lüğət",
+        "ten": "Klassik Azərbaycan ədəbiyyatında işlənən ərəb və fars sözləri lüğəti",
+        "eleven": "İnformasiya Təhlükəsizliyi terminlərinin izahlı lüğəti",
+        "twelve": "İnformasiya Texnologiyaları üzrə müasir terminlər lüğəti",
+        "thirteen": "Elmi fəaliyyətdə istifadə olunan əsas terminlər",
+        "fourteen": "Layihələrin idarə edilməsi terminləri qısa lüğəti",
+        "fifteen": "İnformatika terminlərinin izahlı lüğəti",
+        "sixteen": "Azərbaycanca-Fransızca lüğət",
+        "seventeen": "Yeni sözlər və yeni mənalar lüğəti",
+        "eighteen": "Fəlsəfə terminlərinin izahlı lüğəti",
+        "nineteen": "Azərbaycan dilinin orfoqrafiya lüğəti, 7-ci nəşr",
+        "twenty": "Azərbaycan dilinin dialektoloji lüğəti",
+        "twentyone": "Bədii ədəbiyyatda dialektizmlər",
+        "twentytwo": "İqtisadi lüğət",
+        "twentythree": "Dövlət maliyyəsi terminləri lüğəti (Azərb. sözlüklü)",
+        "twentyfour": "Dövlət maliyyəsi terminləri lüğəti (İngilis sözlüklü)"
+      },
+      "cardSub": {
+        "one": "AMEA İ.Nəsimi adına Dilçilik İnstitutu",
+        "two": "H.Həsənov",
+        "three": "N.Seyidəliyev, İ.Məmmədov",
+        "four": "H.Həsənov",
+        "five": "Bakı Slavyan Universiteti",
+        "six": "Azərbaycan Dövlət Dillər Universiteti",
+        "seven": "Azərbaycan Dövlət Dillər Universiteti",
+        "eignt": "Prinston Universiteti",
+        "nine": "AMEA İ.Nəsimi adına Dilçilik İnstitutu",
+        "ten": "AMEA İ.Nəsimi adına Dilçilik İnstitutu",
+        "eleven": "AMEA İnformasiya Texnologiyaları İnstitutu. Y.İmamverdiyev",
+        "twelve": "AMEA İnformasiya Texnologiyaları İnstitutu. S.Abdullayev, S.Abasova",
+        "thirteen": "AMEA İnformasiya Texnologiyaları İnstitutu. R.Əliquliyev, S.Şükürlü, S.Kazımova",
+        "fourteen": "Xəzər Universiteti. M.Nuriyev.",
+        "fifteen": "AMEA İnformasiya Texnologiyaları İnstitutu. İ.Calallı",
+        "sixteen": "Azərbaycan Dillər Universiteti",
+        "seventeen": "AMEA İ.Nəsimi adına Dilçilik İnstitutu",
+        "eighteen": "A.Nəzərova",
+        "nineteen": "AMEA İ.Nəsimi adına Dilçilik İnstitutu",
+        "twenty": "AMEA İ.Nəsimi adına Dilçilik İnstitutu",
+        "twentyone": "Kübra Quliyeva",
+        "twentytwo": "C.Mövsümov",
+        "twentythree": "İ.Əhmədov, K.Aslanlı, Ş.Əhmədov",
+        "twentyfour": "İ.Əhmədov, K.Aslanlı, Ş.Əhmədov"
+      }
+    },
+    "about": {
+      "title": "Proqram haqqında",
+      "content": {
+        "p1": " – Çoxtəyinatlı onlayn lüğət İdeyanın müəllifi və proqramı hazırlayan: “Kibrit.tech” MMC",
+        "p2": "“Bildilçin” layihəsi ana dilimizin saflığının qorunması və onun geniş düzgün istifadəsi məqsədlərinə xidmət edən qeyri-kommersiya xarakterli layihədir. Bu proqram – xalqımızın milli təfəkkürünün daha da möhkəmləndirilməsinə yönəlmiş kiçik əməyimiz və",
+        "a1": " Azərbaycan dilinin qloballaşma şəraitində zamanın tələblərinə uyğun istifadəsinə və ölkədə dilçiliyin inkişafına dair Dövlət Proqramına verdiyimiz könüllü töhfəmizdir.",
+        "p3": "Proqramda təqdim edilmiş bütün lüğətlər müvafiq müəlliflərin/müəssisələrin mülkiyyətidir, sırf şəxsi istifadə üçün nəzərdə tutulub və kommersiya məqsədləri üçün istifadə edilə bilməz."
+      }
+    },
+    "thanks": {
+      "title": "Təşəkkürlər",
+      "content": {
+        "p1": "İlk növbədə, proqramda istifadə etdiyimiz lüğətlərin müəllifləri, redaktorları və digər tərtibatçılarına böyük və əziyyətli əməklərinə görə xüsusi minnətdarlığımızı bildiririk.",
+        "p2": "Bundan əlavə, layihəmizdə bilavasitə iştirak etmiş hər bir kəsə ürəkdən təşəkkür edirik:",
+        "list": {
+          "one": "Azərbaycan Milli Elmlər Akademiyasının vitse-prezidenti, filologiya elmləri doktoru, professor İsa Həbibbəyli Əkbər oğluna layihənin ideyasını dəstəklədiyinə görə;",
+          "two": "Azərbaycan Milli Elmlər Akademiyasının Nəsimi adına Dilçilik İnstitutunun direktoru, filologiya elmləri doktoru, professor Möhsün Nağısoylu Zellabdin oğluna İnstitutun hazırladığı lüğətləri istifadə etmək imkanını təqdim etdiyinə görə;",
+          "three": "Azərbaycan Dövlət Dillər Universitetinin tələbələri – Samirə Əliyeva Rauf qızı və Cavidan Cavanşirli Fəxri qızına proqrama daxil edilmiş lüğətlərin elektron versiyalarının hazırlanması ilə bağlı könüllü və fədakar əməklərinə görə."
+        }
+      }
+    },
+    "participate": {
+      "title": "Layihədə iştirak",
+      "content": {
+        "innerTitleOne": "Əziz istifadəçilər!",
+        "p1": "“Bildilçin” proqram təminatı xoşunuza gəlirsə, onun təkmilləşdirilməsi və inkişaf etdirilməsi prosesinə qoşulun:",
+        "list": {
+          "one": "Lüğətlərdə aşkar etdiyiniz səhvlər haqda bizə xəbər verin. Bu, cəmi bir neçə saniyə tələb edir – oxuduğunuz lüğət məqaləsini tərk etmədən, səhv olan mətn fraqmentini seçib “Ctrl“ + “Enter” düymələrini basın.",
+          "two": "Proqram haqda məlumatla sosial şəbəkələrdə bölüşün, proqramın mobil versiyasını quraşdırıb, onu qiymətləndirin və müsbət rəy yazın. İnanırıq ki, layihəmizin artan populyarlığı müxtəlif müəllifləri öz lüğətlərini bizə təqdim etməyə həvəsləndirə bilər. Biz isə, öz növbəmizdə, həmin lüğətləri sizlər üçün “Bildilçin”-ə məmnuniyyətlə daxil edərik."
+        },
+        "innerTitleTwo": "Əziz lüğət müəllifləri!",
+        "p2": "Bizim qeyri-kommersiya xarakterli layihəmizdə iştirak etməyi və tərtib etdiyiniz istənilən növ (izahlı, tərcümə və ya terminoloji) lüğəti “Bildilçin” proqram təminatına daxil edilməsini arzulayırsınızsa, saytımızın Əlaqə bölməsindən bizə elektron məktub yazın.",
+        "p3": "Hörmətlə,",
+        "p4": "“Bildilçin” yaradıcı komandası"
+      }
+    },
+    "mobile": {
+      "title": "Mobil Proqram",
+      "p1": "Əziz istifadəçilər,Sizin rahatlığınız üçün “Bildilçin” proqramının mobil versiyasını da yaratmışıq. Onu tamamilə pulsuz quraşdırmaqla siz daha da geniş imkanlara sahib ola bilərsiniz:",
+      "list": {
+         "one": "İstənilən an və istənilən yerdə olarkən sizə lazım olan sözlərin və söz birləşmələrinin mənasını İnternetə bağlanmadan öyrənmək;",
+         "two": "Xoşunuza gəlmiş lüğət məqalələrini “Əlfəcinlər” siyahısına daxil etmək;",
+         "three": "Əvvəl baxdığınız sözləri “Tarix” siyahısından asanlıqla tapmaq;",
+         "four": "Lüğətləri söndürmək/qoşmaqla və onların əks etdirilmə ardıcıllığını dəyişməklə proqramı özünüzün fərdi tələblərinə uyğun xüsusiləşdirmək;",
+         "five": "Yeni (izahlı, tərcümə və terminoloji) lüğətlər çıxdıqca, onları yükləmək."
+      },
+      "p2": "Bunlardan əlavə, interfeys üçün sizi qane edən dil (Azərbaycan, Rus və ya İngilis) və zahiri görünüş – “mövzu”, təyin etmək imkanı lüğətlərlə işinizi daha da rahat və xoş edəcək!"
+    },
+    "contact": {
+      "title": "Əlaqə",
+      "p": "“Bildilçin” layihəsi ilə bağlı təklif və istəklərinizi bizə çatdırmaq, və ya layihə ilə bağlı digər suala dair bizimlə əlaqə saxlamaq üçün aşağıdakı formadan istifadə edin.",
+      "placeholder": {
+        "name": "Adınız və soyadınız *",
+        "email": "Elektron poçt ünvanınız *",
+        "institution": "Təmsil etdiyiniz təşkilat",
+        "message": "Məktubunuzun mətni *"
+      },
+      "note": "Doldurulması mütləq olan sahələr “ * ” işarəsi ilə nişanlanıb.",
+      "button": "Göndər"
+    }
+  }
+}

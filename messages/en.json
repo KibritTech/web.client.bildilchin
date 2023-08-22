@@ -1,0 +1,142 @@
+{
+  "Index": {
+    "nav": {
+      "help": "Help",
+      "dictionaries": "Dictionaries",
+      "project": "Project",
+      "about": "About Project",
+      "thanks": "Thanks",
+      "participate": "Participate In The Project",
+      "mobile": "Mobile App",
+      "contact": "Contact Us"
+    },
+    "home": {
+      "placeholder": "Search",
+      "wordlist": "Word-list",
+      "entries": "Entries",
+      "options": {
+        "begins": "Begins", 
+        "contains": "Contains",
+        "ends": "Ends"
+      }
+    },
+    "help": {
+      "title": "Help"
+    },
+    "dict": {
+      "title": "Dictionaries",
+      "cardTitle": {
+        "one": "Azerbaijani explanatory dictionary",
+        "two": "Azerbaijani homonyms dictionary",
+        "three": "Azerbaijani synonyms dictionary",
+        "four": "Azerbaijani antonyms dictionary",
+        "five": "Azerbaijani-Russian dictionary",
+        "six": "Azerbaijani-English dictionary",
+        "seven": "English-Azerbaijani dictionary",
+        "eight": "WordNet – lexical database of English",
+        "nine": "Russian-Azerbaijani dictionary",
+        "ten": "Arabic and Persian words used in Azerbaijani classical literature",
+        "eleven": "Information Security terms explanatory dictionary",
+        "twelve": "Information Technologies modern terms explanatory dictionary",
+        "thirteen": "Main temrs used in scientific work",
+        "fourteen": "Concise dictionary of Project Management terms",
+        "fifteen": "Computer Science terms explanatory dictionary",
+        "sixteen": "Azerbaijani-French dictionary",
+        "seventeen": "The dictionary of new words and new meanings",
+        "eighteen": "Explanatory dictionary of philosophical terms",
+        "nineteen": "Azerbaijani spelling dictionary, the 7th edition",
+        "twenty": "Azerbaijani dialect dictionary",
+        "twentyone": "Dialecticisms in fiction",
+        "twentytwo": "The dictionary of economic terms",
+        "twentythree": "The dictionary of state finance terms (Azerb. word-list)",
+        "twentyfour": "The dictionary of state finance terms (English word-list)"
+      },
+      "cardSub": {
+        "one": "ANAS Institute of Linguistics named after Nasimi",
+        "two": "H.Hasanov",
+        "three": "N.Seyidaliyev I.Mammadov",
+        "four": "H.Hasanov",
+        "five": "Baku Slavic University",
+        "six": "Azerbaijan University of Languages",
+        "seven": "Azerbaijan University of Languages",
+        "eignt": "Princeton University",
+        "nine": "ANAS Institute of Linguistics named after Nasimi",
+        "ten": "ANAS Institute of Linguistics named after Nasimi",
+        "eleven": "ANAS Institute of Information Technology. Y.Imamverdiyev",
+        "twelve": "ANAS Institute of Information Technology. S.Abdulayev, S.Abasova",
+        "thirteen": "ANAS Institute of Information Technology. R.Aliguliyev, S.Shukurlu, S.Kazimova",
+        "fourteen": "Khazar University. M.Nuriyev.",
+        "fifteen": "ANAS Institute of Information Technology. I.Jalalli",
+        "sixteen": "Azerbaijan University of Languages",
+        "seventeen": "ANAS Institute of Linguistics named after Nasimi",
+        "eighteen": "A.Nazarova",
+        "nineteen": "ANAS Institute of Linguistics named after Nasimi",
+        "twenty": "ANAS Institute of Linguistics named after Nasimi",
+        "twentyone": "Kubra Guliyeva",
+        "twentytwo": "J.Movsumov",
+        "twentythree": "I.Akhmadov, K.Aslanli, Sh.Akhmadov",
+        "twentyfour": "I.Akhmadov, K.Aslanli, Sh.Akhmadov"
+      }
+    },
+    "about": {
+      "title": "About application",
+      "content": {
+        "p1": " – Multipurpose online dictionary Conception and development by «Kibrit.tech» LLC",
+        "p2": "“Bildilçin” is noncommercial project, which serves the purposes of preserving the purity of our native language and its wide correct usage. This application is our modest attempt to strengthen national identity of our people and our voluntary contribution to",
+        "a1": "State program on the use of the Azerbaijani language in conformity with the requirements of globalization and on the development of linguistics in Azerbaijan.",
+        "p3": "All the dictionaries used in the application are the property of their respective authors/institutions, meant for personal use only and cannot be used for commercial purposes."
+      }
+    },
+    "thanks": {
+      "title": "Thanks",
+      "content": {
+        "p1": "First, we would like to express our special appreciation to all authors, editors and other compilers of the dictionaries, which were used in the application, for their immense and painstaking work.",
+        "p2": "Furthermore, we heartily thank everyone who directly participated in the project:",
+        "list": {
+          "one": "The vise-president of Azerbaijan National Academy of Sciences, doctor of philological sciences, professor Habibbayli Isa Akbar oglu for supporting the idea of the project;",
+          "two": "The Director of Institute of Linguistics named after Nasimi of Azerbaijan National Academy of Sciences, doctor of philological sciences, professor Naghisoylu Mohsun Zellabdin oglu for providing an opportunity to use the dictionaries compiled by Institute;",
+          "three": "The students of Azerbaijan University of Languages – Samira Aliyeva Rauf and Javidan Javanshirli Fakhri, for their voluntary and dedicated work on preparing e-versions of the dictionaries used in the application."
+        }
+      }
+    },
+    "participate": {
+      "title": "Participate in project",
+      "content": {
+        "innerTitleOne": "Dear users!",
+        "p1": "If you like “Bildilçin” application, participate in its improvement and development process:",
+        "list": {
+          "one": "Inform us about literal errors you discover within dictionaries. This takes not more than a couple of seconds – without leaving the dictionary entry, just select text fragment, which contains error, and press “Ctrl“ + “Enter” keys;",
+          "two": "Share the information about “Bildilçin” in social networks, install the mobile version of the application, rate it and provide positive feedback. We believe that growing popularity of the project may inspire different authors to present us their dictionaries, which we will gladly add to “Bildilchin” for you."
+        },
+        "innerTitleTwo": "Dear authors of dictionaries!",
+        "p2": "If you wish to participate in our non-commercial project, by presenting your dictionary of any purpose (explanatory, translation or terminological) for our adding it into “Bildilçin” application, contact us by sending an e-mail from “Contact us“ page of our web-site.",
+        "p3": "Respectfully yours,",
+        "p4": "“Bildilçin” developer team"
+      }
+    },
+    "mobile": {
+      "title": "Mobile App",
+      "p1": "Dear users,For your convenience, we have developed also a mobile version of “Bildilçin” application. By installing it, you will get even more functions and advantages, such as:",
+      "list": {
+         "one": "Finding meaning of words and phrases anytime and anywhere without Internet-connection;",
+         "two": "Adding dictionary articles you like to “Bookmark” list;",
+         "three": "Easily finding from “History” list the words you have viewed before;",
+         "four": "Customizing the application according to your needs by turning off/on dictionaries and setting the sequence of dictionaries displaying;",
+         "five": "Downloading new dictionaries (explanatory, translation and terminological) as they appear."
+      },
+      "p2": "In addition, the possibility to set language (English, Azerbaijani or Russian) and “theme” for interface will make your work with dictionaries even more comfortable and pleasant!"
+    },
+    "contact": {
+      "title": "Contact us",
+      "p": "You can send us your wishes and proposals, or contact us for another issue related to the “Bildilçin” project by using the form below.",
+      "placeholder": {
+        "name": "Your name and surname *",
+        "email": "Your e-mail address *",
+        "institution": "Institution, which you represent",
+        "message": "Your message *"
+      },
+      "note": "The mandatory fields are marked with the “ * ” symbol.",
+      "button": "Send"
+    }
+  }
+}
