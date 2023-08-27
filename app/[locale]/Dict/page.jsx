@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import Popup from "./Popup/Popup";
 import { useTranslations } from "next-intl";
+import fetchDictionaryList from "./API/API";
 
 const Dictionaries = () => {
   const [popups, setPopups] = useState([]);
@@ -11,12 +12,10 @@ const Dictionaries = () => {
   const t = useTranslations("Index");
 
   useEffect(() => {
-    fetch("https://bildilchin.az:8888/bildilchin/get/dictionaryList")
-      .then((response) => response.json())
-      .then((data) => {
-        setData(data);
-        setPopups(new Array(data.length).fill(false));
-      });
+    fetchDictionaryList().then((data) => {
+      setData(data);
+      setPopups(new Array(data.length).fill(false));
+    });
   }, []);
 
   const openPopup = (index) => {
@@ -307,9 +306,19 @@ const Dictionaries = () => {
         <div
           key={item.id}
           className="bg-[#2e3e70] my-4 py-4 px-6 rounded-md flex justify-between cursor-pointer"
+          onClick={() => openPopup(index)}
         >
-          <div className="text-white text-sm" onClick={() => openPopup(index)}>
-            {item.nameEn}
+          <div>
+            <div
+              className="text-white text-sm"
+            >
+              {item.nameEn}
+            </div>
+            <div
+              className="text-gray-500 text-xs"
+            >
+              {item.authorEn}
+            </div>
           </div>
 
           <div className="flex items-center">

@@ -3,7 +3,7 @@
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { useTranslations } from "next-intl";
-import {useRouter} from 'next-intl/client';
+import { useRouter } from "next-intl/client";
 import Link from "next/link";
 import { Fragment } from "react";
 import { useProjectContext } from "../../Context/ProjectContext";
@@ -13,9 +13,6 @@ const Options = () => {
   const t = useTranslations("Index");
   const { navbar, setNavbar, isProjectOpen, setProjectOpen } =
     useProjectContext();
-
-  console.log("navbar:", navbar);
-  console.log("isProjectOpen:", isProjectOpen);
 
   return (
     <div
@@ -118,7 +115,7 @@ const Options = () => {
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button className="inline-flex justify-center gap-x-1.5 py-2 text-[18px]">
-                  <div  onClick={()=>router.push('/', {locale: 'en'})}>
+                  <div onClick={() => router.push("/", { locale: "en" })}>
                     En
                   </div>
                   <ChevronDownIcon
@@ -142,7 +139,7 @@ const Options = () => {
                     <Menu.Item>
                       <div
                         className="block px-4 py-1 text-sm text-white "
-                        onClick={()=>router.push('/', {locale: 'az'})}
+                        onClick={() => router.push("/", { locale: "az" })}
                       >
                         Az
                       </div>
@@ -151,7 +148,7 @@ const Options = () => {
                       <Menu.Item>
                         <div
                           className="block px-4 py-1 text-sm text-white "
-                          onClick={()=>router.push('/', {locale: 'ru'})}
+                          onClick={() => router.push("/", { locale: "ru" })}
                         >
                           Ru
                         </div>
