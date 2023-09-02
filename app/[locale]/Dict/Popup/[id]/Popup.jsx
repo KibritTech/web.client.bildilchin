@@ -1,7 +1,23 @@
-import React, { useEffect, useRef } from "react";
+import { useProjectContext } from "@/app/[locale]/Context/ProjectContext";
+import React, { useEffect, useRef, useState } from "react";
 
-const Popup = ({ isOpen, onClose, info, params }) => {
+const Popup = ({ isOpen, onClose }) => {
   const popupRef = useRef(null);
+  const { fetchDictionaryList } = useProjectContext();
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    if (isOpen) {
+      fetchDictionaryList()
+        .then((data) => {
+          setData(data);
+          setPopups(new Array(data.length).fill(false));
+        })
+        .catch((error) => {
+          console.error('Failed to fetch data:', error);
+        });
+    }
+  }, [isOpen]);
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -22,13 +38,15 @@ const Popup = ({ isOpen, onClose, info, params }) => {
   return (
     <>
       {isOpen && (
-        <div className="fixed inset-0 flex items-center justify-center z-50 ">
+        <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="absolute inset-0 bg-gray-900 opacity-40"></div>
           <div ref={popupRef} className="bg-white rounded-lg p-6 z-10 w-full">
-            {/* <h2 className="text-lg font-bold mb-4">Popup Content</h2>
-            <p className="mb-4">This is the content of the popup.</p>
-            <p className="text-white text-sm"> {info} </p> */}
-            <p className="text-white text-sm"> {params && params.id} </p>
+            {data.map((item) => (
+              <div key={item.id}>
+                <p>{item.dictionaryInfo}</p> 
+                {/* <p>{item.shortNameRu}</p>  */}
+              </div>
+            ))}
           </div>
         </div>
       )}
