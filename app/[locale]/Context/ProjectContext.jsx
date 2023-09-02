@@ -12,9 +12,22 @@ export const ProjectContextProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
 
+  
+const fetchDictionaryList = async () => {
+  const response = await fetch('https://bildilchin.az:8888/bildilchin/get/dictionaryList', { cache: 'force-cache' });
+ 
+  if (!response.ok) {
+    throw new Error('Failed to fetch data');
+  }
+ 
+  return response.json();
+};
+
+
+
   return (
     <ProjectContext.Provider
-      value={{ navbar, setNavbar, isProjectOpen, setProjectOpen, isOpen, setIsOpen }}
+      value={{ navbar, setNavbar, isProjectOpen, setProjectOpen, isOpen, setIsOpen, fetchDictionaryList }}
     >
       {children}
     </ProjectContext.Provider>

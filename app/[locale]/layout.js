@@ -20,7 +20,7 @@ export default async function RootLayout({ children,  params: {locale} }) {
 
   return (
     <html lang={locale}>
-      <body>
+      <body className=''>
         <ProjectContextProvider>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />

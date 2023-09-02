@@ -79,7 +79,7 @@ export default function Home({ children, isOpen, onClose }) {
 
   return (
     <div>
-      <main className="h-full">
+      <main className="">
         <div
           className={`bg-gray-100 ${
             inputValue ? "h-96" : "h-32"
