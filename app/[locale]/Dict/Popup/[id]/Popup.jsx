@@ -1,23 +1,9 @@
-import { useProjectContext } from "@/app/[locale]/Context/ProjectContext";
-import React, { useEffect, useRef, useState } from "react";
+"use client";
 
-const Popup = ({ isOpen, onClose }) => {
+import React, { useEffect, useRef } from "react";
+
+const Popup = ({ isOpen, onClose, selectedItem }) => {
   const popupRef = useRef(null);
-  const { fetchDictionaryList } = useProjectContext();
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    if (isOpen) {
-      fetchDictionaryList()
-        .then((data) => {
-          setData(data);
-          setPopups(new Array(data.length).fill(false));
-        })
-        .catch((error) => {
-          console.error('Failed to fetch data:', error);
-        });
-    }
-  }, [isOpen]);
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -41,12 +27,36 @@ const Popup = ({ isOpen, onClose }) => {
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="absolute inset-0 bg-gray-900 opacity-40"></div>
           <div ref={popupRef} className="bg-white rounded-lg p-6 z-10 w-full">
-            {data.map((item) => (
-              <div key={item.id}>
-                <p>{item.dictionaryInfo}</p> 
-                {/* <p>{item.shortNameRu}</p>  */}
+            <div className="flex justify-between ">
+              <div>
+                <h1>{selectedItem.nameEn}</h1>
+                <h1>{selectedItem.authorEn}</h1>
+                {/* <p>Dictionarie Author</p> */}
               </div>
-            ))}
+
+              <svg
+                onClick={onClose}
+                className="h-8 w-8 text-[#ff5f53] cursor-pointer"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </div>
+
+            <div>
+              <p>{selectedItem.dictionaryInfo}</p>
+              {/* <p>{selectedItem.nameEn}</p> */}
+              {/* <p>{selectedItem.shortNameRu}</p> */}
+              <p>info</p>
+            </div>
           </div>
         </div>
       )}
