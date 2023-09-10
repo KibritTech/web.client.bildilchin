@@ -1,39 +1,35 @@
 "use client";
 
-import React, { useEffect } from "react";
-import { useState } from "react";
-import Popup from "./Popup/[id]/Popup";
+import React, { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { useProjectContext } from "../Context/ProjectContext";
+import Popup from "./Popup/[id]/Popup";
 
 const Dictionaries = () => {
   const [selectedItem, setSelectedItem] = useState(null);
-  const [popups, setPopups] = useState([]);
+  const [popups, setPopups] = useState([]); 
   const [data, setData] = useState([]);
   const t = useTranslations("Index");
   const { fetchDictionaryList } = useProjectContext();
 
   useEffect(() => {
     fetchDictionaryList()
-      .then((data) => {
-        setData(data);
+      .then((fetchedData) => {
+        setData(fetchedData);
+        setPopups(new Array(fetchedData.length).fill(false));
       })
-      .catch((error) => {
-        console.error("Failed to fetch data:", error);
-      });
+      .catch((error) => console.error("Failed to fetch data:", error));
   }, []);
+  
 
   const openPopup = (item) => {
     setSelectedItem(item);
-    const newPopups = popups.map((popup, index) =>
-      index === item.id ? true : popup
-    );
-    setPopups(newPopups);
+    setPopups(popups.map((_, index) => index === item.id ? true : false));
   };
 
   const closePopup = () => {
     setSelectedItem(null);
-    setPopups(new Array(data.length).fill(false));
+    setPopups(popups.map(() => false));
   };
 
   return (
