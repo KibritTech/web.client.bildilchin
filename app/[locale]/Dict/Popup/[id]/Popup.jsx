@@ -29,8 +29,8 @@ const Popup = ({ isOpen, onClose, selectedItem }) => {
           <div ref={popupRef} className="bg-white rounded-lg p-6 z-10 w-full">
             <div className="flex justify-between ">
               <div>
-                <h1>{selectedItem.nameEn}</h1>
-                <h1>{selectedItem.authorEn}</h1>
+                <h1 className="cursor-default text-[#343d5c] text-xl">{selectedItem.nameEn}</h1>
+                <h1 className="cursor-default text-[#7f88a7] text-sm py-2">{selectedItem.authorEn}</h1>
                 {/* <p>Dictionarie Author</p> */}
               </div>
 
@@ -52,9 +52,7 @@ const Popup = ({ isOpen, onClose, selectedItem }) => {
             </div>
 
             <div>
-              <p>{selectedItem.dictionaryInfo}</p>
-              {/* <p>{selectedItem.nameEn}</p> */}
-              {/* <p>{selectedItem.shortNameRu}</p> */}
+              <p className="cursor-default">{selectedItem.dictionaryInfo}</p>
               <p>info</p>
             </div>
           </div>
