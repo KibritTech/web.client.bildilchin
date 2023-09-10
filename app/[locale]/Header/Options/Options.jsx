@@ -35,18 +35,18 @@ const Options = () => {
           </Link>
         </li>
 
-        <li className="text-md text-white py-2 px-3">
+        <li className="text-lg text-white py-2 px-3">
           <Link href="/Help" onClick={() => setNavbar(!navbar)}>
             {t("nav.help")}
           </Link>
         </li>
-        <li className="text-md text-white py-2 px-3">
+        <li className="text-lg text-white py-2 px-3">
           <Link href="/Dict" onClick={() => setNavbar(!navbar)}>
             {t("nav.dictionaries")}
           </Link>
         </li>
 
-        <li className="text-md text-white py-2 px-3 relative">
+        <li className="text-lg text-white py-2 px-3 relative">
           <div>
             <button
               className="inline-flex w-full gap-x-1.5 rounded-md text-md"
@@ -65,18 +65,18 @@ const Options = () => {
           {isProjectOpen && (
             <div className="my-2 md:absolute left-0 z-10 w-48 origin-top-right">
               <div className="">
-                <a href="/About" className="block px-4 py-2 text-md text-white">
+                <a href="/About" className="block px-4 py-2 text-lg text-white">
                   {t("nav.about")}
                 </a>
                 <a
                   href="/Thanks"
-                  className="block px-4 py-2 text-md text-white"
+                  className="block px-4 py-2 text-lg text-white"
                 >
                   {t("nav.thanks")}
                 </a>
                 <a
                   href="/Participate"
-                  className="block px-4 pt-2 text-md text-white"
+                  className="block px-4 pt-2 text-lg text-white"
                 >
                   {t("nav.participate")}
                 </a>
@@ -90,7 +90,7 @@ const Options = () => {
             {t("nav.mobile")}
           </Link>
         </li>
-        <li className="text-md text-white py-2 px-3">
+        <li className="text-lg text-white py-2 px-3">
           <Link href="/Contact" onClick={() => setNavbar(!navbar)}>
             {t("nav.contact")}
           </Link>

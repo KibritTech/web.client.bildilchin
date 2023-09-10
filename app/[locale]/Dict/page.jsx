@@ -33,7 +33,7 @@ const Dictionaries = () => {
   };
 
   return (
-    <div className="mx-auto w-4/5 pt-4">
+    <div className="mx-auto w-[90%] sm:w-[72%] pt-4">
       <h1 className="text-[#ff5f53] font-light text-2xl md:text-5xl md:py-4">
         {t("dict.title")}
       </h1>
@@ -41,7 +41,7 @@ const Dictionaries = () => {
       {data.map((item) => (
         <div
           key={item.id}
-          className="bg-[#2e3e70] my-4 py-4 px-6 rounded-md flex justify-between cursor-pointer"
+          className="bg-[#2b3a67] my-4 py-4 px-6 rounded-md flex justify-between cursor-pointer"
           onClick={() => openPopup(item)}
         >
           <div>
