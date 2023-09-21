@@ -21,17 +21,36 @@ const Popup = ({ isOpen, onClose, selectedItem }) => {
     };
   }, [isOpen, onClose]);
 
+  const currentURL = typeof window !== "undefined" ? window.location.href : "";
+
+  let name = "";
+  let author = "";
+  let info = "";
+
+  if (currentURL.includes("http://localhost:3000/az/Dict")) {
+    name = selectedItem.nameAz;
+    author = selectedItem.authorAz;
+    info = selectedItem.dictionaryInfoAz;
+  } else if (currentURL.includes("http://localhost:3000/ru/Dict")) {
+    name = selectedItem.nameRu;
+    author = selectedItem.authorRu;
+    info = selectedItem.dictionaryInfoRu;
+  } else {
+    name = selectedItem.nameEn;
+    author = selectedItem.authorEn;
+    info = selectedItem.dictionaryInfoEn;
+  }
+
   return (
     <>
       {isOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="absolute inset-0 bg-gray-900 opacity-40"></div>
           <div ref={popupRef} className="bg-white rounded-lg p-6 z-10 w-full">
-            <div className="flex justify-between ">
+            <div className="flex justify-between">
               <div>
-                <h1 className="cursor-default text-[#343d5c] text-xl">{selectedItem.nameEn}</h1>
-                <h1 className="cursor-default text-[#7f88a7] text-sm py-2">{selectedItem.authorEn}</h1>
-                {/* <p>Dictionarie Author</p> */}
+                <h1 className="cursor-default text-[#343d5c] text-xl">{name}</h1>
+                <h1 className="cursor-default text-[#7f88a7] text-sm py-2">{author}</h1>
               </div>
 
               <svg
@@ -52,8 +71,7 @@ const Popup = ({ isOpen, onClose, selectedItem }) => {
             </div>
 
             <div>
-              <p className="cursor-default">{selectedItem.dictionaryInfo}</p>
-              <p>info</p>
+              <p className="cursor-default">{info}</p>
             </div>
           </div>
         </div>
