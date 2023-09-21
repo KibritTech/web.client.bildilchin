@@ -7,10 +7,11 @@ import Popup from "./Popup/[id]/Popup";
 
 const Dictionaries = () => {
   const [selectedItem, setSelectedItem] = useState(null);
-  const [popups, setPopups] = useState([]); 
+  const [popups, setPopups] = useState([]);
   const [data, setData] = useState([]);
   const t = useTranslations("Index");
   const { fetchDictionaryList } = useProjectContext();
+  const currentURL = typeof window !== "undefined" ? window.location.href : "";
 
   useEffect(() => {
     fetchDictionaryList()
@@ -20,11 +21,10 @@ const Dictionaries = () => {
       })
       .catch((error) => console.error("Failed to fetch data:", error));
   }, []);
-  
 
   const openPopup = (item) => {
     setSelectedItem(item);
-    setPopups(popups.map((_, index) => index === item.id ? true : false));
+    setPopups(popups.map((_, index) => (index === item.id ? true : false)));
   };
 
   const closePopup = () => {
@@ -44,10 +44,26 @@ const Dictionaries = () => {
           className="bg-[#2b3a67] my-4 py-4 px-6 rounded-md flex justify-between cursor-pointer"
           onClick={() => openPopup(item)}
         >
+
           <div>
-            <div className="text-white text-sm">{item.nameEn}</div>
-            <div className="text-gray-500 text-xs">{item.authorEn}</div>
+            {currentURL.includes("http://localhost:3000/az/Dict") ? (
+              <>
+                <div className="text-white text-sm">{item.nameAz}</div>
+                <div className="text-gray-500 text-xs">{item.authorAz}</div>
+              </>
+            ) : currentURL.includes("http://localhost:3000/ru/Dict") ? (
+              <>
+                <div className="text-white text-sm">{item.nameRu}</div>
+                <div className="text-gray-500 text-xs">{item.authorRu}</div>
+              </>
+            ) : (
+              <>
+                <div className="text-white text-sm">{item.nameEn}</div>
+                <div className="text-gray-500 text-xs">{item.authorEn}</div>
+              </>
+            )}
           </div>
+
 
           <div className="flex items-center">
             <img className="h-5 w-5" src="/i.png" alt="i_icon" />
